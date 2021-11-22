@@ -1,6 +1,3 @@
-
-/* --------------Подключение шрифтов------------- */
-
 @font-face {
     font-family: "Cuprum";
     src:
@@ -55,10 +52,6 @@
     font-style: italic;
 }
 
-/*Конец раздела подключения шрифтов*/
-
-/*Variables*/
-
 :root {
     --basic-red: #EE3643;
     --basic-hover-red: #CA2C37;
@@ -107,8 +100,6 @@
     --basic-yellow-rgb: rgba(255,209,128, 0.5);
 }
 
-/*----Общие стили------*/
-
 .page-body {
     font-family: "Cuprum", Arial, sans-serif;
     color: var(--basic-black);
@@ -149,17 +140,11 @@ a {
     list-style: none;
 }
 
-/* Container */
-
 .container {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
 }
-
-/*----------Шапка сайта----------*/
-
-/*----Навигация пользователя----*/
 
 .navigation-wrapper-bar {
     background-color: var(--basic-navy-blue);
@@ -246,14 +231,10 @@ a {
     opacity: 1;
 }
 
-/* Пользовательское меню страницы каталог */
-
 .inner-page-cart {
     background-color: var(--basic-red);
     width: 136px;
 }
-
-/* Обертка для логотипа шапки */
 
 .logo-wrapper {
     display: flex;
@@ -277,8 +258,6 @@ a {
     margin-bottom: 12px;
 }
 
-/* Обертка для иконки и плейсхолдера */
-
 .search-wrapper {
     display: flex;
     width: 270px;
@@ -295,8 +274,6 @@ a {
     fill: var(--basic-white);
     opacity: 0.3;
 }
-
-/* Поиск */
 
 .input-search {
     font-style: normal;
@@ -354,8 +331,6 @@ input.input-search:focus + .icon-search path {
     opacity: 1;
 }
 
-/* Адрес, контакты, вход */
-
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -409,8 +384,6 @@ input.input-search:focus + .icon-search path {
     margin-left: 17px;
 }
 
-/* Авторизация и регистрация гл.страница */
-
 .auth-wrapper {
     display: flex;
     justify-content: space-between;
@@ -460,8 +433,6 @@ input.input-search:focus + .icon-search path {
     color: var(--basic-grey-auth);
 }
 
-/* Стилизация иконок */
-
 .icon-login {
     position: absolute;
     top: 14px;
@@ -479,8 +450,6 @@ input.input-search:focus + .icon-search path {
 .login-link:active .icon-login path {
     fill: var(--basic-grey-auth);
 }
-
-/*Основаная навигация по сайту*/
 
 .main-navigation-wrapper {
     background-color: var(--basic-navy-blue);
@@ -515,10 +484,6 @@ input.input-search:focus + .icon-search path {
     opacity: 0.5;
 }
 
-/*------------Мейн------------*/
-
-/*-----------Баннер-----------*/
-
 .banner-navigation-list {
     display: grid;
     margin-top: 59px;
@@ -526,8 +491,6 @@ input.input-search:focus + .icon-search path {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
 }
-
-/* Слайдер */
 
 .slider-box {
     grid-column: 1/3;
@@ -543,8 +506,6 @@ input.input-search:focus + .icon-search path {
     position: relative;
     overflow: hidden;
 }
-
-/* Слайдеры и анимация */
 
 .slide {
     width: 100%;
@@ -565,10 +526,6 @@ input.input-search:focus + .icon-search path {
     background-repeat: no-repeat;
     z-index: 2;
 }
-
-/* Стилизация слайдера */
-
-/* Верхняя шапка слайдера */
 
 .slider-content-wrapper {
     height: 104px;
@@ -597,8 +554,6 @@ input.input-search:focus + .icon-search path {
     padding-top: 6px;
     padding-left: 24px;
 }
-
-/* Кнопки перелистывания слайдера */
 
 .slider-buttons-wrapper {
     position: absolute;
@@ -636,8 +591,6 @@ input.input-search:focus + .icon-search path {
     margin-right: 5px;
 }
 
-/* Пагинатор слайдера */
-
 .slider-controls {
     position: absolute;
     width: 30px;
@@ -674,8 +627,6 @@ input.input-search:focus + .icon-search path {
     border: 1px solid var(--basic-white);
 }
 
-/* Ссылка на каталог */
-
 .more-link {
     background-color: var(--basic-red);
     font-size: 14px;
@@ -701,8 +652,6 @@ input.input-search:focus + .icon-search path {
     margin-top: 97px;
     box-sizing: border-box;
 }
-
-/* Остальные баннеры */
 
 .banner-box {
     font-style: normal;
@@ -792,8 +741,6 @@ input.input-search:focus + .icon-search path {
     background-position: 191px 32px;
 }
 
-/*----------Товары---------*/
-
 .headlines-wrapper {
     display: flex;
     justify-content: space-between;
@@ -851,8 +798,6 @@ input.input-search:focus + .icon-search path {
     margin-top: 24px;
 }
 
-/* лычка new перекрывается картинкой в карточке */
-
 .products-navigation-item {
     display: flex;
     flex-direction: column;
@@ -902,8 +847,6 @@ input.input-search:focus + .icon-search path {
     align-items: center;
     position: relative;
 }
-
-/* Скрытые стили карточки товара */
 
 .purchase-form {
     display: none;
@@ -986,8 +929,6 @@ input.input-search:focus + .icon-search path {
     -webkit-text-stroke: 1px var(--basic-black);
 }
 
-/* Замена картинки на окно с ссылками при наведении на картинку товара */
-
 .products-navigation-item:hover .products-image-wrapper {
     display: none;
 }
@@ -995,8 +936,6 @@ input.input-search:focus + .icon-search path {
 .products-navigation-item:hover .purchase-form  {
     display: flex;
 }
-
-/* Остальная часть карточки */
 
 .products-text {
     font-family: "PT Sans", Arial, sans-serif;
@@ -1057,8 +996,6 @@ input.input-search:focus + .icon-search path {
     order: 3;
 }
 
-/*----------Производители---------*/
-
 .brands-navigation-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1091,8 +1028,6 @@ input.input-search:focus + .icon-search path {
     opacity: 50%;
 }
 
-/* --------Сервисы---------- */
-
 .services-wrapper {
     background-color: var(--basic-soft-grey);
     margin-top: 70px;
@@ -1103,7 +1038,6 @@ input.input-search:focus + .icon-search path {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
 }
 
 .services-navigation-list li {
@@ -1122,8 +1056,6 @@ input.input-search:focus + .icon-search path {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-
-/* Выпадающее меню */
 
 .services-content {
     width: 620px;
@@ -1208,8 +1140,6 @@ input.input-search:focus + .icon-search path {
     padding-bottom: 20px;
 }
 
-/* Кнопки в меню сервисы */
-
 .button {
     background-color: var(--basic-navy-blue);
     border-top: 1px solid var(--basic-inner-shadow-blue);
@@ -1276,8 +1206,6 @@ input.input-search:focus + .icon-search path {
 .button:focus {
     outline: none;
 }
-
-/* abouts */
 
 .abouts .headlines {
     font-style: normal;
@@ -1350,8 +1278,6 @@ input.input-search:focus + .icon-search path {
     padding: 10px 0;
     margin-top: 21px;
 }
-
-/* Попап модуль. Добавить в корзину. */
 
 .cart-items-form {
     display: none;
@@ -1440,7 +1366,6 @@ input.input-search:focus + .icon-search path {
     width: 192px;
     padding: 11px 0 9px 0;
     margin: 37px 0;
-
 }
 
 .cart-submit-link {
@@ -1463,8 +1388,6 @@ input.input-search:focus + .icon-search path {
     background-color: var(--basic-click-red);
     outline-width: 0;
 }
-
-/* Фидбэк форма  */
 
 .main-feedback-form {
     position: fixed;
@@ -1617,8 +1540,6 @@ input.input-search:focus + .icon-search path {
     outline-width: 0;
 }
 
-/* Попап для карты */
-
 .map-popup {
     display: none;
     position: fixed;
@@ -1641,8 +1562,6 @@ input.input-search:focus + .icon-search path {
     float: right;
     padding: 10px 10px 0px 0;
 }
-
-/* ------------Footer-------------- */
 
 .footer-top-wrapper {
     display: grid;
@@ -1769,8 +1688,6 @@ input.input-search:focus + .icon-search path {
     padding-bottom: 24px;
 }
 
-/* Иконки соцсети */
-
 .icon {
     display: flex;
     align-items: center;
@@ -1814,8 +1731,6 @@ input.input-search:focus + .icon-search path {
     margin-left: 1px;
     margin-bottom: 2px;
 }
-
-/* Третья колонка "фидбэк" */
 
 .bot-col3 {
     display: flex;
@@ -1868,12 +1783,6 @@ input.input-search:focus + .icon-search path {
     color: var(--basic-white);
 }
 
-/* Конец стилизации главной страницы */
-
-/* Страница Каталог */
-
-/* Личный кабинет */
-
 .inner-auth-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -1884,8 +1793,6 @@ input.input-search:focus + .icon-search path {
     margin-left: 25px;
     position: relative;
 }
-
-/* Правка для внутренней страницы */
 
 .inner-contacts-wrapper {
     margin-left: 6px;
@@ -1993,8 +1900,6 @@ input.input-search:focus + .icon-search path {
     color: var(--basic-grey-auth);
 }
 
-/* breadcrumbs */
-
 .icon-home path {
     fill: var(--basic-dark-grey);
 }
@@ -2023,8 +1928,6 @@ input.input-search:focus + .icon-search path {
     position: relative;
 }
 
-
-
 .breadcrumbs-item:before {
     position: absolute;
     content: "";
@@ -2050,22 +1953,16 @@ input.input-search:focus + .icon-search path {
     margin-bottom: 20px;
 }
 
-/* Главная гридовая сетка объединяющая фильтры и галерею карточек */
-
 .main-grid-wrapper {
     display: grid;
     grid-template-columns: 220px 1fr;
     grid-gap: 20px;
 }
 
-/* Гридовая сетка для галереи карточек */
-
 .content-grid-container {
     display: grid;
     grid-template-columns: max-content;
 }
-
-/* Галерея. Сортировка  */
 
 .arrangement-wrapper {
     display: flex;
@@ -2139,8 +2036,6 @@ input.input-search:focus + .icon-search path {
     fill: var(--basic-red);
 }
 
-/* Галерея */
-
 .gallery-list {
     display: grid;
     grid-template-columns: repeat(3, 220px);
@@ -2174,8 +2069,6 @@ input.input-search:focus + .icon-search path {
     color: var(--basic-black);
     text-transform: uppercase;
 }
-
- /* Фильтр */
 
 .filter-item {
     font-family: "PT Sans", Arial, sans-serif;
@@ -2307,8 +2200,6 @@ input[type="number"] {
     left: 107px;
 }
 
-/* Производители чекбоксы */
-
 .filter-brands legend {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -2334,55 +2225,39 @@ input[type="number"] {
     left: -35px;
 }
 
-/* Не зачекан */
-
 .input-checkbox + .checkbox {
     background-image: url("../img/icons/checkbox.svg");
     background-repeat: no-repeat;
 }
-
-/* Не зачекан + наведение */
 
 .input-checkbox:hover + .checkbox {
     background-image: url("../img/icons/checkbox_focused.svg");
     background-repeat: no-repeat;
 }
 
-/* Зачекан */
-
 .input-checkbox:checked + .check {
     background-image: url("../img/icons/checkbox_checked.svg");
     background-repeat: no-repeat;
 }
-
-/* Зачекан + наведение */
 
 .input-checkbox:checked:hover + .check {
     background-image: url("../img/icons/checkbox_checked_focused.svg");
     background-repeat: no-repeat;
 }
 
-/* disabled */
-
 .input-checkbox:disabled + .check {
     background-image: url("../img/icons/checkbox_disabled.svg");
     background-repeat: no-repeat;
 }
-
-/* Checked Disabled */
 
 .input-checkbox:checked:disabled + .check {
     background-image: url("../img/icons/checkbox_checked_disabled.svg");
     background-repeat: no-repeat;
 }
 
-/* Разделитель блока производителей */
-
 .brands-slasher {
     margin-top: 6px;
 }
-
-/* Радиокнопки */
 
 .filter-power {
     margin-top: 18px;
@@ -2412,13 +2287,9 @@ input[type="number"] {
     box-sizing: border-box;
 }
 
-/* Наведение на радиокнопку */
-
 .input-radio:hover + .radio-icon {
     border-color: var(--basic-grey-moon);
 }
-
-/* Радиокнопка. Состояние checked */
 
 .input-radio:checked + .radio-icon .radio-on {
     position: absolute;
@@ -2431,13 +2302,9 @@ input[type="number"] {
     border-radius: 50%;
 }
 
-/* Радиокнопка. Состояние checked + наведение */
-
 .input-radio:checked:hover + .radio-icon .radio-on {
     background-color: var(--basic-grey-moon);
 }
-
-/* Радиокнопка. Состояние disabled  */
 
 .input-radio:disabled + .radio-icon {
     position: absolute;
@@ -2451,8 +2318,6 @@ input[type="number"] {
     box-sizing: border-box;
     opacity: 0.4;
 }
-
-/* Радиокнопка. Состояние checked + disabled */
 
 .input-radio:checked:disabled + .radio-icon .radio-on {
     position: absolute;
@@ -2491,8 +2356,6 @@ input[type="number"] {
     color: var(--basic-black);
     outline: none;
 }
-
-/* Пагинация */
 
 .gallery-pagination {
     display: flex;
@@ -2543,8 +2406,6 @@ input[type="number"] {
 .pagination-current:hover {
     border: 1px solid var(--basic-red);
 }
-
-/* Пара слов о префораторах */
 
 .article-wrapper {
     background-color: var(--basic-soft-grey);
